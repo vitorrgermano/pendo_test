@@ -13,6 +13,31 @@
   <link rel="shortcut icon" href="../assets/play.png" type="image/x-icon">
   <link rel="stylesheet" href="../styles/login.css">
   <link rel="stylesheet" href="../styles/style.css">
+  <!--PENDO SCRIPT-->
+      
+  <script>
+  (function(apiKey){
+      (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+      v=['initialize','identify','updateOptions','pageLoad','track','trackAgent'];for(w=0,x=v.length;w<x;++w)(function(m){
+          o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+          y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+          z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+          var rand = Math.random();
+      pendo.initialize({
+          visitor: {
+              id: "Vitor"+rand,
+              email: "vitor"+rand+"@smttech.com.br",
+              firstName: "Vitor",
+              lastName: "Germano",
+          },
+          account: {
+              id: "Vitor123",
+              accountName: "Vitor",
+              payingStatus: "Closed",
+          }
+      });
+  })('620f2451-27a9-40f7-b01f-987b2fe5ad64');
+  </script>
 </head>
 
 <body>
