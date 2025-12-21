@@ -1,0 +1,30 @@
+.title{
+   color: yellow!important;
+
+    font-family: 'Anton', sans-serif;
+    text-shadow: 2px 2px #000000;
+    font-size: 40px;
+    text-align: center;
+}
+
+.nav-link{
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+.btn-color{
+    background-color: yellow;
+}
+
+footer{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    margin-top: 100px;
+    color: white;
+  }
