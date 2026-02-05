@@ -36,13 +36,15 @@
 document.addEventListener("DOMContentLoaded", function () {
   if (window.pendo && typeof pendo.track === "function") {
       console.log('Track Event Run')
-      console.log(pendo.getActiveGuide()?.guide?.name || null+' '+JSON.stringify(window.innerWidth)+' '+JSON.stringify(window.innerHeight))
+      console.log(JSON.stringify(window.innerWidth)+' '+JSON.stringify(window.innerHeight))
     pendo.track("Registered", {
       plan: "Pro Annual",
       accountType: "Facebook",
-      activeGuide: pendo.getActiveGuide()?.guide?.name || null,
       width: JSON.stringify(window.innerWidth),
-      height: JSON.stringify(window.innerHeight)
+      height: JSON.stringify(window.innerHeight),
+      id: "Vitor123",
+      accountName: "Vitor",
+      payingStatus: "Closed"
     });
   }
 });
