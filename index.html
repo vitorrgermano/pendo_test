@@ -36,6 +36,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   if (window.pendo && typeof pendo.track === "function") {
       console.log('Track Event Run')
+      console.log(pendo.getActiveGuide()?.guide?.name || null+' '+JSON.stringify(window.innerWidth)+' '+JSON.stringify(window.innerHeight))
     pendo.track("Registered", {
       plan: "Pro Annual",
       accountType: "Facebook",
