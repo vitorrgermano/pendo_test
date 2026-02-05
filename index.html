@@ -33,6 +33,18 @@
           }
       });
   })('620f2451-27a9-40f7-b01f-987b2fe5ad64');
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.pendo && typeof pendo.track === "function") {
+      console.log('Track Event Run')
+    pendo.track("Registered", {
+      plan: "Pro Annual",
+      accountType: "Facebook",
+      activeGuide: pendo.getActiveGuide()?.guide?.name || null,
+      width: JSON.stringify(window.innerWidth),
+      height: JSON.stringify(window.innerHeight)
+    });
+  }
+});
   </script>
     <title>ResiliaFlix</title>
 </head>
